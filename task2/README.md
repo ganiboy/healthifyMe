@@ -132,4 +132,12 @@ Few Test cases with request and response are below where data is passed as a req
 	[{"meal_id": 1, "foods": [{"id": 1,                          400	{"error_message": "'food_id key is not present
 	"food_name": "Idli"}, {"id": 10,                                         in meal_data[foods]'","status": "Failed"}
 	"food_name": "Sambar"}]}],data["food_ids"] = [10]	
-			
+
+
+cmd to run pytest: 
+
+        python3 -m pytest /HealthifyMe/task2/test_app.py
+
+cmd to run flask app:
+
+        

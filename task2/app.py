@@ -4,7 +4,10 @@ from flask_api import status
 from datetime import date
 import logging
 from validate_request_body import *
-from task1.solution import get_matching_meals
+import sys
+import os
+sys.path.append(os.getcwd() + '/task1')
+from solution import get_matching_meals
 from global_exception_handler import KeyError, ValidationError
 
 
