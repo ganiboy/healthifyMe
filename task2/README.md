@@ -99,12 +99,10 @@ Few Test cases with request and response are below where data is passed as a req
 	Request Body	                                        Status-Code	    Response
 			
 	data["meal_data"], data["food_ids"] = [1, 10]               200	    {"meal_ids": [1, 3], "status": "Success"}
+    
+	data["meal_data"], data["food_ids"] = [1]                   200     {"meal_ids": [1, 2, 3], "status": "Success"}
 
-	data["meal_data"], data["food_ids"] = [1]	                200     {"meal_ids": [1, 2, 3], "status": "Success"}
-
-	data["meal_data"]	                                        400	    {"error_message": 
-	                                                                        "food_ids is missing in request body", 
-	                                                                            "status": "Failed"}
+	data["meal_data"]	                                        400	    {"error_message": "food_ids is missing in request body", "status": "Failed"}
 
 	data["meal_data"],data['food_ids'] = 1	                    400	    {"error_message": "food_ids data type mismatch, 
 	                                                                        food_ids , expected to be <class 'list'>", 
@@ -115,10 +113,10 @@ Few Test cases with request and response are below where data is passed as a req
 	                                                                        "status": "Failed"}
 
 	data["food_ids"] = [1, 10]	                                 400	{"error_message": "meal_data is missing 
-	                                                                        in request body", "status": "Failed"}
+	                            in request body", "status": "Failed"}
 
-	data = {}	                                                 400	{"error_message": "meal_data and food_ids are 
-	                                                                    missing in request body","status": "Failed"}
+	data = {}                                                   400	    {"error_message": "meal_data and food_ids are 
+	                                                                        missing in request body","status": "Failed"}
 
 	data["meal_data"]= [{"meal_data" : [{"id": 1,
 	"foods": 
