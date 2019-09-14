@@ -107,5 +107,6 @@ Few Negative test cases,
 
     
 cmd to run pytest: 
-
-        python3 -m pytest /HealthifyMe/task1/test.py
+        
+        cd /healthifyMe/task1
+        python3 -m pytest test.py

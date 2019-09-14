@@ -135,9 +135,12 @@ Few Test cases with request and response are below where data is passed as a req
 
 
 cmd to run pytest: 
-
-        python3 -m pytest /HealthifyMe/task2/test_app.py
+        
+        cd /healthifyMe/
+        python3 -m pytest task2/test_app.py
 
 cmd to run flask app:
-
+        
+        cd /healthifyMe/
+        python3 task2/app.py   
         
