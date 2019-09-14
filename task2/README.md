@@ -98,9 +98,9 @@ Few Test cases with request and response are below where data is passed as a req
 
 	Request Body	                                        Status-Code	    Response
 			
-	data["meal_data"], data["food_ids"] = [1, 10]	             200	{"meal_ids": [1, 3], "status": "Success"}
+	data["meal_data"], data["food_ids"] = [1, 10]               200	    {"meal_ids": [1, 3], "status": "Success"}
 
-	data["meal_data"], data["food_ids"] = [1]	                 200	{"meal_ids": [1, 2, 3], "status": "Success"}
+	data["meal_data"], data["food_ids"] = [1]	                200     {"meal_ids": [1, 2, 3], "status": "Success"}
 
 	data["meal_data"]	                                         400	{"error_message": 
 	                                                                    "food_ids is missing in request body", 
