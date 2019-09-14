@@ -112,7 +112,7 @@ Few Test cases with request and response are below where data is passed as a req
 	                                                                        meal_data expected to be <class 'list'>", 
 	                                                                        "status": "Failed"}
 
-	data["food_ids"] = [1, 10]	                                400	    {"error_message": "meal_data is missing in request body", "status": "Failed"}
+	data["food_ids"] = [1, 10]                                  400	    {"error_message": "meal_data is missing in request body", "status": "Failed"}
 
 	data = {}                                                   400	    {"error_message": "meal_data and food_ids are 
 	                                                                        missing in request body","status": "Failed"}
